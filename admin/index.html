@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/add.css">
+    <title>HOOK AGENCY ADMIN | Add Service</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>HOOK AGENCY ADMIN</h2>
+        </div>
+        <div class="nav">
+            <ul class="mainLink">
+                <li><a class="active" href="index.html">Services</a></li>
+                <li><a href="assets/html/project/add.html">Projects</a></li>
+                <li><a href="assets/html/team/add.html">Team</a></li>
+                <li><a href="assets/html/message/index.html">Messages</a></li>
+            </ul>
+            <ul class="SubLink">
+                <li><a class="active" href="index.html">Add</a></li>
+                <li><a href="assets/html/service/view.php">View</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contentForm">
+        <form action="assets/php/services/insert.php" method="post" enctype="multipart/form-data" autocomplete="off">
+            <h3>ADD SERVICE</h3>
+            <label for="title">Title : </label>
+            <input type="text" name="title">
+            <label for="image">Image : </label>
+            <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png" value="">
+            <input type="text" name="description">
+            <button type="submit" name="submit">Add Service</button>
+        </form>
+
+    </div>
+</body>
+</html>

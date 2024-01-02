@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --color-o: #FFFBE0;
+    --color-te: #FCDA05;
+    --color-th: #393E46;
+    --color-f: #222831;
+}
+html{
+    scroll-behavior: smooth
+}
+header{
+    background-color: var(--color-f);
+    padding: 10px 5%;
+    display: block;
+    text-align: center;
+}
+header .title h2{
+    font-size: 30px;
+    color: var(--color-te);
+}
+header .nav{
+    display: block;
+}
+header .nav .mainLink{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header .nav .mainLink li a{
+    color: var(--color-o);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header .nav .mainLink li .active{
+    color: var(--color-te);
+}
+header .nav .SubLink{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-th);
+    padding: 20px 0;
+}
+header .nav .SubLink li a{
+    color: var(--color-o);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header .nav .SubLink li .active{
+    color: var(--color-te);
+}
+.contentForm{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+.contentForm form h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--color-f);
+    font-weight: 800;
+}
+.contentForm form input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border: solid var(--color-th) 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+}
+.contentForm form button{
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: var(--color-f);
+    color: var(--color-o);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/add.css">
+    <title>HOOK AGENCY ADMIN | Add Project</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>HOOK AGENCY ADMIN</h2>
+        </div>
+        <div class="nav">
+            <ul class="mainLink">
+                <li><a href="../../../index.html">Services</a></li>
+                <li><a class="active" href="../project/add.html">Projects</a></li>
+                <li><a href="../team/add.html">Team</a></li>
+                <li><a href="add.html">Messages</a></li>
+            </ul>
+            <ul class="SubLink">
+                <li><a class="active" href="add.html">Add</a></li>
+                <li><a href="view.php">View</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contentForm">
+        <form action="../../php/projects/insert.php" method="post" enctype="multipart/form-data" autocomplete="off">
+            <h3>ADD PROJECT</h3>
+            <label for="image">Image One : </label>
+            <input type="file" name="imageOne" id="">
+            <label for="image">Image Two : </label>
+            <input type="file" name="imageTwo" id="">
+            <label for="description">Description</label>
+            <input type="text" name="description" placeholder="description">
+            <button type="submit">Add Project</button>
+        </form>
+    </div>
+</body>
+</html>

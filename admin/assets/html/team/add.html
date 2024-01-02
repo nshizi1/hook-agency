@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/add.css">
+    <title>HOOK AGENCY ADMIN | Add Team Member</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>HOOK AGENCY ADMIN</h2>
+        </div>
+        <div class="nav">
+            <ul class="mainLink">
+                <li><a href="../../../index.html">Services</a></li>
+                <li><a href="../project/add.html">Projects</a></li>
+                <li><a class="active" href="add.html">Team</a></li>
+                <li><a href="../message/index.html">Messages</a></li>
+            </ul>
+            <ul class="SubLink">
+                <li><a class="active" href="add.html">Add</a></li>
+                <li><a href="view.php">View</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contentForm">
+        <form action="../../php/team/insert.php" method="post" enctype="multipart/form-data" autocomplete="off">
+            <h3>ADD TEAM MEMBER</h3>
+            <input type="text" name="name" placeholder="Names">
+            <input type="file" name="image" name="image" id="">
+            <input type="text" name="title" placeholder="Title In Company">
+            <button type="submit">Add Member</button>
+        </form>
+    </div>
+</body>
+</html>

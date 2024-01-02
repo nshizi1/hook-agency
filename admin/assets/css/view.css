@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --color-o: #FFFBE0;
+    --color-te: #FCDA05;
+    --color-th: #393E46;
+    --color-f: #222831;
+}
+html{
+    scroll-behavior: smooth
+}
+header{
+    background-color: var(--color-f);
+    padding: 10px 5%;
+    display: block;
+    text-align: center;
+}
+header .title h2{
+    font-size: 30px;
+    color: var(--color-te);
+}
+header .nav{
+    display: block;
+}
+header .nav .mainLink{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header .nav .mainLink li a{
+    color: var(--color-o);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header .nav .SubLink{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-th);
+    padding: 20px 0;
+}
+header .nav .SubLink li a{
+    color: var(--color-o);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header .nav .SubLink li .active{
+    color: var(--color-te);
+}
+.contentTable{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+.contentTable table{
+    width: 100%;
+    line-height: 30px;
+}
+.contentTable table tr:nth-child(1){
+    text-align: justify;
+    color: var(--color-te);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.contentTable table tr:nth-child(1) th{
+    border-bottom: solid var(--color-th) 3px;
+}
+.contentTable td{
+    color: var(--color-f);
+    font-size: 18px;
+}
+.contentTable table tr td:nth-child(1){
+    font-weight: 600;
+}
+.contentTable table tr button{
+    padding: 5px 20px;
+    border: none;
+    color: var(--color-o);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease;
+    border-radius: 3px;
+}
+header .nav .mainLink li .active{
+    color: var(--color-te);
+}
+
+.contentTable table tr .Edit{
+    background-color: green;
+}
+.contentTable table tr .delete{
+    background-color: red;
+}
+.contentTable table tr .Edit:hover{
+    background-color: rgba(0, 128, 0, 0.600);
+}
+.contentTable table tr .delete:hover{
+    background-color: rgba(255, 0, 0, 0.600);
+}

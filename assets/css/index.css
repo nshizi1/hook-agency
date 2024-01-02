@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* user-select: none; */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-o: #010059;
+    --color-tw: #107595;
+    --color-th: #FDBFB3;
+    --color-f: #FCF594;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header nav{
+    background-color: var(--color-tw);
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+header nav .logo h2 span{
+    /* color: red; */
+    letter-spacing: -12px;
+}
+header nav .hambageer{
+    display: none;
+}
+header nav .menu ul{
+    display: flex;
+    list-style: none;
+}
+header nav .menu ul li{
+    margin-left: 20px;
+}
+header nav .menu ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+header nav .menu ul li .active{
+    color: var(--color-th);
+}
+
+
+#home .imageBig .img img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+#home .imageBig{
+    position: relative;
+}
+#home .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#home .content h3{
+    font-size: 50px;
+    color: var(--color-f);
+    margin-bottom: 15px;
+}
+#home .content p{
+    font-size: 18px;
+    color: whitesmoke;
+    margin-top: 15px;
+}
+.diagram{
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--color-th);
+    margin: auto;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+    color: var(--color-tw);
+}
+.about{
+    width: 90%;
+    margin: auto;
+}
+.main{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.main .contentImage img{
+    width: 100%;
+    border-radius: 10px;
+}
+.main .text{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 3rem;
+}
+#mission{
+    width: 90%;
+    margin: auto;
+}
+.missionMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.missionMain img{
+    width: 100%;
+    border-radius: 10px;
+}
+.servicesMain .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.servicesMain .cards .card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+    filter: brightness(50%);
+    transition: 200ms ease;
+}
+.servicesMain .cards .card img:hover{
+    filter: brightness(100%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.servicesMain .cards .card .imgService{
+    overflow: hidden;
+}
+#services{
+    width: 90%;
+    margin: auto;
+}
+.servicesMain .cards .card h3{
+    text-align: center;
+    color: var(--color-o);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.servicesMain .cards .card p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.intro{
+    font-size: 18px;
+    margin-top: 20px;
+    color: var(--color-o);
+}
+#project{
+    width: 90%;
+    margin: auto;
+}
+.projectMain .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.projectMain .cards .card img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.projectMain .cards .card{
+    overflow: hidden;
+}
+.projectMain .cards .card .projectImg{
+    display: flex;
+    animation: slide 4s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    40%{
+        transform: translateX(0);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    80%{
+        transform: translateX(-100%);
+    }
+    90%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.teamMain .cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+.teamMain .cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teamMain .cards .card .cardImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid var(--color-f) 5px;
+    box-shadow: 0 0 40px 10px var(--color-th);
+}
+#team{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.teamMain .cards .card .cardText{
+    margin-top: 20px;
+}
+.teamMain .cards .card .cardText h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-o);
+}
+#contact{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.map{
+    width: 100%;
+    margin: auto;
+}
+.map iframe{
+    width: 100%;
+    height: 350px;
+    border: solid var(--color-th) 5px;
+    border-radius: 10px;
+}
+.contactMain{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.contactMain .location ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contactMain .location ul li{
+    display: flex;
+    flex-direction: row;
+}
+.contactMain .location ul li i{
+    font-size: 30px;
+    color: var(--color-th);
+    margin-right: 30px;
+}
+.contactMain .location ul li h3{
+    color: var(--color-o);
+}
+.contactMain .form form{
+    display: flex;
+    flex-direction: column;
+}
+.contactMain .form form h4{
+    color: var(--color-o);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contactMain .form form input, textarea{
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 17px;
+    border: none;
+    border: solid var(--color-tw) 1px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.contactMain .form form button{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border: var(--color-tw) solid 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--color-tw);
+    color: var(--color-f);
+    transition: 200ms ease;
+}
+.contactMain .form form button:hover{
+    color: var(--color-tw);
+    background-color: white;
+}
+footer{
+    background-color: #0d0d28;
+    color: white;
+    padding: 20px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 4rem; */
+    align-items: center;
+}
+footer .logo h3{
+    font-size: 30px;
+}
+footer .link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer .link ul{
+    list-style: none;
+    display: flex;
+}
+footer .link ul li{
+    margin-right: 15px;
+    font-size: 18px;
+}
+footer .link ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer .link ul li a:hover{
+    text-decoration: underline;
+}
+footer .copy a{
+    color: var(--color-f);
+    text-decoration: none;
+    font-size: 18px;
+}
+footer .copy a:hover{
+    text-decoration: underline;
+}
+footer .social{
+    display: flex;
+    justify-content: center;
+}
+footer .social ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+footer .social ul li i{
+    font-size: 30px;
+    color: var(--color-f);
+}
+
+
+
+
+
+
+
+
+/* =======================  RESPONSIVENESS  ======================= */
+
+@media screen AND (max-width: 1024px) {
+    .servicesMain .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .projectMain .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen AND (max-width: 768px) {
+    
+    .menu{
+        display: none;
+    }
+    .menu ul{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-o);
+        transition: top 1s ease;
+        display: none;
+    }
+    .closeMenu{
+        display: none;
+        color: red;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        display: block;
+    }
+    header nav .hambageer{
+        display: block;
+        color: white;
+    }
+    header nav .hambageer i{
+        font-size: 20px;
+    }
+    #home .content h3{
+        font-size: 40px;
+    }
+    #home .content p{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .main .text{
+        font-size: 15px;
+    }
+    .main .text p:nth-child(2){
+        display: none;
+    }
+    .missionText p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .servicesMain .cards .card h3{
+        font-size: 18px;
+    }
+    .servicesMain .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .projectMain .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .servicesMain .cards .card p{
+        font-size: 15px;
+    }
+    .intro{
+        font-size: 17px;
+    }
+    .projectMain .cards .card p{
+        font-size: 15px;
+    }
+    .teamMain .cards .card .cardImage{
+        width: 150px;
+        height: 150px;
+    }
+    .teamMain .cards .card .cardText h3{
+        font-size: 18px;
+    }
+    .cardText p{
+        font-size: 15px;
+    }
+    .contactMain{
+        grid-template-columns: 1fr;
+    }
+    footer .social{
+        display: none;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen AND (max-width: 545px) {
+    header nav .logo h2 span{
+        letter-spacing: -8px;
+    }
+    header nav .logo h2{
+        font-size: 20px;
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+    .missionMain{
+        grid-template-columns: 1fr;
+    }
+    .servicesMain .cards{
+        grid-template-columns: 1fr;
+    }
+    .projectMain .cards{
+        grid-template-columns: 1fr;
+    }
+    .teamMain .cards .card .cardImage{
+        width: 100px;
+        height: 100px;
+    }
+    .teamMain .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .teamMain .cards .card{
+        /* background-color: red; */
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #home .imageBig .img img{
+        height: 50vh;
+    }
+    #home .content h3{
+        font-size: 25px;
+    }
+    #home .content p{
+        font-size: 12px;
+    }
+}
